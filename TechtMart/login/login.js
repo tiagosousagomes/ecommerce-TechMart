@@ -1,14 +1,36 @@
-'use strict'
-//movimento das telas de login e de cadastro
-const loginContainer = document.getElementById('login-container')
+// variavel que guarda os valores do input
+const form = {
+    email: () => document.getElementById("email"),
+    password: () => document.getElementById("password"),
+    name: () => document.getElementById("name"),
+    emailRegister: () => document.getElementById("email-register"),
+    passwordRegister: () => document.getElementById("password-register"),
+}
 
-const moveOverlay = () => loginContainer.classList.toggle('move')
+ /*autenticação de login,confere no servidor de so usuario está cadastrado,
+ se estiver cadastrado ele vai para pagina home, se não, mostra uma mensagem de erro*/
+function login(){
+    firebase.auth().signInWithEmailAndPassword(form.email().value, form.password().value).then(response => {
+        window.location.href = '../home/home.html'
+    }).catch(error =>{
+        alert('email ou senha incorreto')
+    }); 
+}
 
-document.getElementById('open-register').addEventListener('click', moveOverlay)
-document.getElementById('open-login').addEventListener('click', moveOverlay)
+//função de recuperar senha, se o email estiver cadastro, ele envia uma mensagem pelo email, se não, alerta que não encontrou o usuario
+function recoverPassword(){
+    firebase.auth().sendPasswordResetEmail(form.email().value, form.password().value).then(() =>{
+        alert('Email enviado com sucesso');
+    }). catch(error =>{
+        alert('usauario não encontrado');
+    }
+)};
 
-//movimento das telas de login e de cadastro de acordo com a responsividade
-document.getElementById('open-register-mobile').addEventListener('click', moveOverlay)
-document.getElementById('open-login-mobile').addEventListener('click', moveOverlay)
+//faz o usuario ficar logado, sem precisar fazer o login novamente
+firebase.auth().onAuthStateChanged(user => {
+    if(user){
+        window.location.href = '../home/home.html'
+    }
+})
 
 

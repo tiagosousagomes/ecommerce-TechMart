@@ -2,7 +2,7 @@
 const form = {
     email: () => document.getElementById("email"),
     password: () => document.getElementById("password"),
-    name: () => document.getElementById("name"),
+    name: () => document.getElementById("name-register"),
     emailRegister: () => document.getElementById("email-register"),
     passwordRegister: () => document.getElementById("password-register"),
 }

@@ -279,8 +279,6 @@ nav ul li:hover{
     border-radius: 5px;
     overflow: hidden;
     transition: .5s;
-    opacity: 0;
-    visibility: hidden;
 }
 
 .dropdown-menu a {

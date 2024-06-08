@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "poppins";
 }
 
 /*header */
@@ -205,7 +206,7 @@ nav ul li:hover{
     
   }
   .header-bottom-side-left button:hover{
-    background-color: #158a8ae7;
+    background-color: #158a8a;
   }
   .header-bottom-side-right{
     flex-basis: 50%;
@@ -289,5 +290,5 @@ nav ul li:hover{
 }
 
 .dropdown-menu a:hover {
-    background-color: #87dbdb;
+    background-color: #158A8A;
 }

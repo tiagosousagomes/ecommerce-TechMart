@@ -1,155 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+.container-products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+   
+}
+
+.content{
+    width: 20%;
+    margin: 15px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container{
-    width: 200px;
-    height: 150px;
-    position: absolute;
-    left: 15%;
-    top: 47%;
-}
-
-.container .product{
-    background: #fafafa;
-    padding: 20px;
+    float: left;
     text-align: center;
-    border-radius: 15px;
-}
-
-.container .product .image{
-    width: 150px;
-    height: 150px;
-    margin: auto;
-}
-
-.container .product .image .product-image{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: 0.8s linear;
-}
-
-.container .product .color{
-    display: flex;
-    align-items:center ;
-    justify-content: center;
-    margin: 15px;
-}
-
-.container .product .color span{
-    width: 15px;
-    height: 15px;
-    margin: 0 15px;
-    border-radius: 50%;
-    background: #48dfbe;
+    border-radius: 20px;
     cursor: pointer;
-    position: relative;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: #f2f2f2;
+}
+.content:hover{
+    box-shadow:  0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
 }
 
-.container .product .title{
-    font-size: 22px;
-    text-align: center;
-}
-
-.container .product .detail{
-    text-align: center;
-    font-size: 15px;
-}
-
-.container .product .detail p{
-    margin: 15px;
-    font-size: 25px;
-}
-
-.container .product .detail p span{
-    color: #48dfbe;
-}
-
-.container .product .detail a{
-    text-decoration: none;
-    background: #48dfbe;
-    padding: 8px 45px;
-    border-radius: 8px;
-    color: white;
-    margin: 15px;
-}
-
-.container2{
+.iphone{
+    object-fit: cover;  
   width: 200px;
-  height: 150px;
-  position: absolute;
-  left: 30%;
-  top: 47%;
+  height: 200px;
+  image-rendering: -webkit-optimize-contrast; /* Chrome */
+        image-rendering: crisp-edges; /* Firefox */
+        image-rendering: pixelated; /* Safari and Edge */
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+    
+}
+.notebook{
+    object-fit: cover;  
+  width: 280px;
+  height: 200px;
+  image-rendering: -webkit-optimize-contrast; /* Chrome */
+        image-rendering: crisp-edges; /* Firefox */
+        image-rendering: pixelated; /* Safari and Edge */
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+
+}
+.fone-de-ouvido{
+    object-fit: cover;  
+  width: 200px;
+  height: 200px;
+  image-rendering: -webkit-optimize-contrast; /* Chrome */
+        image-rendering: crisp-edges; /* Firefox */
+        image-rendering: pixelated; /* Safari and Edge */
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
 }
 
-
-.container2 .product{
-    background: #fafafa;
-    padding: 20px;
+h6{
+    font-size: 26px;
     text-align: center;
-    border-radius: 15px;
+    color: #313131;
+    margin: 0;
 }
 
-.container2 .product .image{
-    width: 150px;
-    height: 150px;
-    margin: auto;
+h3{
+    margin-top: 10px;
 }
-
-.container2 .product .image .product-image{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: 0.8s linear;
-}
-
-.container2 .product .color{
+.list-products{
+    list-style: none;
     display: flex;
-    align-items:center ;
     justify-content: center;
-    margin: 15px;
+    align-items: center;
+    padding-top: 0;
+
 }
 
-.container2 .product .color span{
-    width: 15px;
-    height: 15px;
-    margin: 0 15px;
-    border-radius: 50%;
-    background: #48dfbe;
-    cursor: pointer;
-    position: relative;
+li{
+    padding-top: 5px;
+}
+.fa{
+    font-size: 26px;
+    transition: .4s;
+    margin: 3px;
+    margin-bottom: 10px;
 }
 
-.container2 .product .title{
-    font-size: 22px;
-    text-align: center;
+.checked{
+    color: #FFD646;
 }
 
-.container2 .product .detail{
-    text-align: center;
-    font-size: 15px;
+.fa:hover{
+    transform: scale(1.3);
+    transition: 6s;
 }
-
-.container2 .product .detail p{
-    margin: 15px;
-    font-size: 25px;
-}
-
-.container2 .product .detail p span{
-    color: #48dfbe;
-}
-
-.container2 .product .detail a{
-    text-decoration: none;
-    background: #48dfbe;
-    padding: 8px 45px;
-    border-radius: 8px;
-    color: white;
-    margin: 15px;
+.credit-card{
+    font-size: 13px;
+    
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="imagex/png" href="C:\Facisa\ecommerce-TechMart\TechtMart\assets\logo.png">
+    <link rel="shortcut icon" type="imagex/png" href="../assets/logo.png">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="produtos.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -12,135 +12,257 @@
     <title>TechMart</title>
     </head>
     <body>
-        <!-- navegação -->
-        <div class="navBar">
-            <div class="header-inner-content">
-                <div class="logo">
-                    <a href="../home/home.html">
-                    <img class="img-logo" src="../assets/logo.png">
-                    </a>
-                    <h1 class="text-logo">TechMart</h1>
-                </div>
-                    <div class="textInputWrapper">
-                        <input placeholder="pesquisar algo" type="text" class="textInput">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>Favoritos</li>
-                            <li>Pedidos</li>
-                            <li>Sobre</li>
-                        </ul>
-                    </nav>
-                    <div class="cart-icon">
-                        <div> 
-                         <a href="sacolinha.html" alt="Cart" class="img-cart" id="imgCart"> <img src="../assets/sacola.png" alt="Sacola" class="img-cart"> </a>
-                       </div>
-                    </div>
-                    
-                    <div class="profile-container">
-                    <div>
-                        <img src="../assets/imagem-perfil.png" alt="Profile" class="img-perfil" id="imgPerfil">
-                        <div class="dropdown-menu" id="dropdownMenu">
-                            <a href="#" id="register">Perfil</a>
-                            <a href="#" onclick="logout()" id="register">Sair</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>    
-        </div>
+        <!DOCTYPE html>
 
-        <!-- header ---> 
-        <header>
-            <div class="header-inner-content">
-                <div class="header-bottom-side">
-                    <div class="header-bottom-side-left">
-                        <h2> Alcance todo o seu Potencial</h2>
-                        <p> Crie, explore e se conecte com nossas mais recentes tecnologias. 12x sem juros e frete grátis</p>
-                        <button> Ver Agora &#8594;</button>
-                    </div>
-                    <div class="header-bottom-side-right">
-                        <img src="../assets/notebook.png" alt="notebook gigabyte">
-                    </div>
-                </div>
-            </div>
-        </header>
+<html>
+<head>
+	<title>
+	</title>
+</head>
 
-        <!-- Corpo -->
+<body>
+	<div class="navBar">
+		<div class="header-inner-content">
+			<div class="logo">
+				<a href="../home/home.html"><img class="img-logo" src="../assets/logo.png"></a>
 
-       
-            <div class="container-products">
-              
-                <div class="content">
-                    <img class="iphone" src="../assets/iphone-15-pro-maxx.jpeg">
-                    <h3> Iphone 15 Pro Max</h3>
-                    <p> Apple iPhone 15 pro Max (512 GB) - Titânio <br> preto</p>
-                    <h6>R$9500,00</h6>
-                    <p class="credit-card"> a vista no cartão de credito ou <br> até em <b>10x de R$950,00</b> </p>
-                    <ul class="list-products">
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star "></i></li>
-                        <li><i class="fa fa-star "></i></li>
-                    </ul>
-                </div>
-                
-                <div class="content">
-                    <img class="notebook" src="../assets/notebook-g15.jpeg">
-                    <h3> Notebook G15</h3>
-                    <p> Notebook Gamer Dell G15-i1300 15.6"FHD i5 8GB 512 SSD NVIDIA RTX 3050</p>
-                    <h6>R$4500,00</h6>
-                    <p class="credit-card"> a vista no cartão de credito ou <br> até em <b>10x de R$450,00</b> </p>
-                    <ul class="list-products">
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star "></i></li>
-                    </ul>
-                </div>
+				<h1 class="text-logo">TechMart</h1>
+			</div>
 
 
-                <div class="content">
-                    <img class="iphone" src="../assets/suporte-notebook.jpg">
-                    <h3> Suporte Notebook</h3>
-                    <p> Suporte para notebook portátil metal resistente ajustável prata - MULTINIXIA</p>
-                    <h6>R$100,00</h6>
-                    <p class="credit-card"> a vista no cartão de credito ou <br> até em <b>5x de R$20,00</b> </p>
-                    <ul class="list-products">
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                    </ul>
-                </div>
-                
-                <div class="content">
-                    <img class="fone-de-ouvido" src="../assets/fone-de-ouvido.jpg">
-                    <h3> Fone de ouvido</h3>
-                    <p> Headset Gamer Sem Fio Logitech G435 LIGHTSPEED com Bateria de 18h </p>
-                    <h6>R$435,00</h6>
-                    <p class="credit-card"> a vista no cartão de credito ou <br> até em <b>8x de R$56,25</b> </p>
-                    <ul class="list-products">
-                        <li class="list-products"><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star checked"></i></li>
-                        <li><i class="fa fa-star "></i></li>
-                    </ul>
-              </div>
-            </div>
-            
-       
-        <script src="home.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-        <script src="../firebase/firebaseInit.js"></script>
-        <script src="../firebase/auth-guard.js"></script>
-        <script src="../global/global.js"></script>
-        <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+			<div class="textInputWrapper">
+				<input class="textInput" placeholder="pesquisar algo" type="text">
+			</div>
+
+
+			<nav>
+				<ul>
+					<li>Favoritos</li>
+
+
+					<li>Pedidos</li>
+
+
+					<li><a href="../about/aboutUs.html">Sobre</a></li>
+                        
+				</ul>
+			</nav>
+
+
+			<div class="cart-icon">
+				<div>
+					<a class="img-cart" href="sacolinha.html" id="imgCart"><img alt="Sacola" class="img-cart" src="../assets/sacola.png"></a>
+				</div>
+			</div>
+
+
+			<div class="profile-container">
+				<div>
+					<img alt="Profile" class="img-perfil" id="imgPerfil" src="../assets/imagem-perfil.png">
+
+					<div class="dropdown-menu" id="dropdownMenu">
+						<a href="#" id="register">Perfil</a> <a href="#" id="register" onclick="logout()">Sair</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header =-->
+
+
+	<header>
+		<div class="header-inner-content">
+			<div class="header-bottom-side">
+				<div class="header-bottom-side-left">
+					<h2>Alcance todo o seu Potencial</h2>
+
+
+					<p>Crie, explore e se conecte com nossas mais recentes tecnologias. 12x sem juros e frete grátis</p>
+					<button>Ver Agora &#8594;</button>
+				</div>
+
+
+				<div class="header-bottom-side-right"><img alt="notebook gigabyte" src="../assets/notebook.png">
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Corpo -->
+
+
+	<div class="container-products">
+		<div class="content">
+			<img class="iphone" src="../assets/iphone-15-pro-maxx.jpeg">
+
+			<h3>Iphone 15 Pro Max</h3>
+
+
+			<p>Apple iPhone 15 pro Max (512 GB) - Titânio<br>
+			preto</p>
+
+
+			<h6>R$9500,00</h6>
+
+
+			<p class="credit-card">a vista no cartão de credito ou<br>
+			até em <b>10x de R$950,00</b></p>
+
+
+			<ul class="list-products">
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star"></i>
+				</li>
+
+
+				<li><i class="fa fa-star"></i>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="content">
+			<img class="notebook" src="../assets/notebook-g15.jpeg">
+
+			<h3>Notebook G15</h3>
+
+
+			<p>Notebook Gamer Dell G15-i1300 15.6"FHD i5 8GB 512 SSD NVIDIA RTX 3050</p>
+
+
+			<h6>R$4500,00</h6>
+
+
+			<p class="credit-card">a vista no cartão de credito ou<br>
+			até em <b>10x de R$450,00</b></p>
+
+
+			<ul class="list-products">
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star"></i>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="content">
+			<img class="iphone" src="../assets/suporte-notebook.jpg">
+
+			<h3>Suporte Notebook</h3>
+
+
+			<p>Suporte para notebook portátil metal resistente ajustável prata - MULTINIXIA</p>
+
+
+			<h6>R$100,00</h6>
+
+
+			<p class="credit-card">a vista no cartão de credito ou<br>
+			até em <b>5x de R$20,00</b></p>
+
+
+			<ul class="list-products">
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="content">
+			<img class="fone-de-ouvido" src="../assets/fone-de-ouvido.jpg">
+
+			<h3>Fone de ouvido</h3>
+
+
+			<p>Headset Gamer Sem Fio Logitech G435 LIGHTSPEED com Bateria de 18h</p>
+
+
+			<h6>R$435,00</h6>
+
+
+			<p class="credit-card">a vista no cartão de credito ou<br>
+			até em <b>8x de R$56,25</b></p>
+
+
+			<ul class="list-products">
+				<li class="list-products"><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star checked"></i>
+				</li>
+
+
+				<li><i class="fa fa-star"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="home.js">
+	</script> 
+	<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js">
+	</script> 
+	<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js">
+	</script> 
+	<script src="../firebase/firebaseInit.js">
+	</script> 
+	<script src="../firebase/auth-guard.js">
+	</script> 
+	<script src="../global/global.js">
+	</script> 
+	<script src="https://kit.fontawesome.com/324b71f187.js">
+	</script>
+</body>
+</html>
         
     </body>
 </html> 

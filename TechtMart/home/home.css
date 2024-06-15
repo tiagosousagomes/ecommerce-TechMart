@@ -1,11 +1,8 @@
 
 /*header */
 header{
-  background: #44A08D;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  color: #FFFFFF;  
+background: linear-gradient(to right, #093637, #44A08D); 
+  color: var(--color-neutral-40);  
     font-family: "poppins";
 }
 
@@ -33,7 +30,7 @@ background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, F
   font-size: 1rem;
 }
 .header-bottom-side-left button{
-  background-color: #FFFFFF;
+  background-color: var(--color-neutral-30);
   border: none;
   cursor: pointer;
   padding: 0.8rem 3.8rem;
@@ -47,10 +44,10 @@ background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, F
   
 }
 .header-bottom-side-left button:hover{
-  background: #44A08D;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+ 
+
 background: linear-gradient(to right, #093637, #44A08D);
-  color: #FFFFFF;
+  color: var(--color-neutral-30);
 }
 .header-bottom-side-right{
   flex-basis: 50%;

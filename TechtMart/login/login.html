@@ -22,8 +22,8 @@
         <title>Login - TechMart</title>
         </head>
     <body>
-        <main>
-        
+    
+    <main id="main-content">      
         <!--Redes sociais da area de login-->
             <div class="login-container" id="login-container">
                 <div class="form-container">
@@ -43,12 +43,16 @@
 
                           <!--login email e senha-->
                         <p class="form-text">ou utilize sua conta</p>
+                        
                         <div class="form-input-container">
-                            <input id="email" type="email" class="form-input" placeholder="Email"">
+                            <input id="email" type="email" class="form-input" placeholder="Email"> 
                             <input id="password" type="password" class="form-input" placeholder="Senha""> 
+                            
+                            
                         </div>
                         <a href="#" onclick="recoverPassword()" id="recover-Password"  class="form-link">Esqueceu a senha?</a>
                         <button id="login-button" type="button" class="form-button" onclick="login()">Entrar</button>
+                        
                         <p class="mobile-text">
                             Não tem conta?
 
@@ -99,10 +103,15 @@
                      <p class="form-text">Cadastre-se e comece a usar a nossa plataforma on-line</p>
                      <button class="form-button form-button-light" id="open-register">Cadastrar</button>
                     </div>
-                </div>     
-            </div>         
-        </main>       
+                
+                </div>   
+             
+            </div>
+                    
+        </main>   
+        
     </body>
+    
 
     <!--import do firebase app e o firebase auth-->
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

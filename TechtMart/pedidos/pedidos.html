@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="pedidos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="imagex/png" href="../assets/logo.png">
+
+    <title>Pedidos</title>
+</head>
+<body>
+    <div class="navBar">
+		<div class="header-inner-content">
+			<div class="logo">
+				<a href="../home/home.html"><img class="img-logo" src="../assets/logo.png"></a>
+
+				<h1 class="text-logo">TechMart</h1>
+			</div>
+
+
+			<div class="textInputWrapper">
+				<input class="textInput" placeholder="pesquisar algo" type="text">
+			</div>
+
+
+			<nav>
+				<ul>
+					<li><a href="../favoritos/favoritos.html">Favoritos</li>
+
+
+					<li><a href="../pedidos/pedidos.html">Pedidos</li>
+
+
+					<li><a href="../about/aboutUs.html">Sobre</a></li>
+                        
+				</ul>
+			</nav>
+
+
+			<div class="cart-icon">
+				<div>
+					<a class="img-cart" href="sacolinha.html" id="imgCart"><img alt="Sacola" class="img-cart" src="../assets/sacola.png"></a>
+				</div>
+			</div>
+
+
+			<div class="profile-container">
+				<div>
+					<img alt="Profile" class="img-perfil" id="imgPerfil" src="../assets/imagem-perfil.png">
+
+					<div class="dropdown-menu" id="dropdownMenu">
+						<a href="#" id="register">Perfil</a> <a href="#" id="register" onclick="logout()">Sair</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="../global/global.js"></script>
+
+
+
+    <main>
+		<div id="titulo-do-pedido">
+			<h1> Seus pedidos</h1>
+		</div>
+        <div class="pedido-container">
+            <div class="image-product">
+                <img src="../assets/iphone-15-pro-maxx.jpeg" alt="Imagem do Pedido">
+            </div>
+            
+            <div class="pedido-titulo"> 
+                <h4>Iphone 15 Pro Max </h4>
+                <p>Entregue em: 15 de Junho de 2024</p> 
+                <button class="button-buy-again"> Comprar novamente</button>
+                <button class="button-see-item"> ver seu item</button>
+            </div>
+         <div class="list-button">
+			<ul>
+				<li>
+					<button class="button-action"> Rastrear pacote</button>
+				</li>
+				<li>
+					<button class="button-action"> Avaliar produto</button>
+				</li>
+				<li>
+					<button class="button-action"> Devolver item</button>
+				</li>
+
+			</ul>
+		 </div>
+        </div>
+
+        <div class="pedido-container">
+            <div class="image-product">
+                <img src="../assets/fone-de-ouvido.jpg" alt="Imagem do Pedido">
+            </div>
+            
+            <div class="pedido-titulo"> 
+                <h4>Headeset G435 Logitech </h4>
+                <p>Entregue em: 15 de Junho de 2024</p> 
+                <button class="button-buy-again"> Comprar novamente</button>
+                <button class="button-see-item"> ver seu item</button>
+            </div>
+         <div class="list-button">
+			<ul>
+				<li>
+					<button class="button-action"> Rastrear pacote</button>
+				</li>
+				<li>
+					<button class="button-action"> Avaliar produto</button>
+				</li>
+				<li>
+					<button class="button-action"> Devolver item</button>
+				</li>
+
+			</ul>
+		 </div>
+        </div>
+		
+        <div class="pedido-container">
+            <div class="image-product">
+                <img src="../assets/suporte-notebook.jpg" alt="Imagem do Pedido">
+            </div>
+            
+            <div class="pedido-titulo"> 
+                <h4>Notebook G15 gamer </h4>
+                <p>Entregue em: 07 de Maio de 2024</p> 
+                <button class="button-buy-again"> Comprar novamente</button>
+                <button class="button-see-item"> ver seu item</button>
+            </div>
+         <div class="list-button">
+			<ul>
+				<li>
+					<button class="button-action"> Rastrear pacote</button>
+				</li>
+				<li>
+					<button class="button-action"> Avaliar produto</button>
+				</li>
+				<li>
+					<button class="button-action"> Devolver item</button>
+				</li>
+
+			</ul>
+		 </div>
+        </div>
+    </main>
+	<footer>
+			<div id="footer_content">
+				<div id="footer_contacts">
+					<h1>Logo</h1>
+	
+	
+					<p>It's all about technology</p>
+	
+	
+					<div id="footer_social_media">
+						<a class="footer-link" href="#" id="instagram"><i class="fa-brands fa-instagram"></i></a> <a class="footer-link" href="#" id="facebook"><i class=
+						"fa-brands fa-facebook-f"></i></a> <a class="footer-link" href="#" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+					</div>
+				</div>
+	
+	
+				<ul class="footer-list">
+					<li>
+						<h3>Blog</h3>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Eventos</a>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Noticias</a>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Carreiras</a>
+					</li>
+				</ul>
+	
+	
+				<ul class="footer-list">
+					<li>
+						<h3>Blog</h3>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Eventos</a>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Noticias</a>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Carreiras</a>
+					</li>
+				</ul>
+	
+	
+				<ul class="footer-list">
+					<li>
+						<h3>Perfil</h3>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Sua Conta</a>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Seus pedidos</a>
+					</li>
+	
+	
+					<li>
+						<a class="footer-link" href="#">Prazo de Entrega</a>
+					</li>
+				</ul>
+	
+	
+				<div id="footer_subscribe">
+					<h3>Inscreva-se</h3>
+	
+	
+					<p>Entre com seu email para receber as novidades!</p>
+	
+	
+					<div id="input_group">
+						<input id="email" type="email"> <button><i class="fa-regular fa-envelope"></i></button>
+					</div>
+				</div>
+			</div>
+	
+	
+			<div id="footer_copyright">
+				&#169; 2024 all rights reserved
+			</div>
+	</footer>
+</body>
+</html>

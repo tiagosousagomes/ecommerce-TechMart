@@ -19,10 +19,10 @@ function login(){
 
 //função de recuperar senha, se o email estiver cadastro, ele envia uma mensagem pelo email, se não, alerta que não encontrou o usuario
 function recoverPassword(){
-    firebase.auth().sendPasswordResetEmail(form.email().value, form.password().value).then(() =>{
+    firebase.auth().sendPasswordResetEmail(form.email().value).then(() =>{
         alert('Email enviado com sucesso');
     }). catch(error =>{
-        alert('usauario não encontrado');
+        alert('usuario não encontrado');
     }
 )};
 

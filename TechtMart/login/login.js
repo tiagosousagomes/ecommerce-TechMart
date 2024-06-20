@@ -1,3 +1,4 @@
+
 // variavel que guarda os valores do input
 const form = {
     email: () => document.getElementById("email"),
@@ -18,13 +19,33 @@ function login(){
 }
 
 //função de recuperar senha, se o email estiver cadastro, ele envia uma mensagem pelo email, se não, alerta que não encontrou o usuario
-function recoverPassword(){
-    firebase.auth().sendPasswordResetEmail(form.email().value).then(() =>{
-        alert('Email enviado com sucesso');
-    }). catch(error =>{
-        alert('usuario não encontrado');
+async function recoverPassword() {
+  const email = form.email().value;
+
+  try {
+    const user = await firebase.auth().fetchSignInMethodsForEmail(email);
+
+    if (user.length === 0) {
+      alert('Usuário não encontrado.');
+      return;
     }
-)};
+
+    // Verifica se o email está verificado
+    const userData = await firebase.auth().getUserByEmail(email);
+    if (!userData.emailVerified) {
+      alert('Este e-mail ainda não foi verificado. Por favor, verifique sua caixa de entrada para o link de verificação.');
+      return;
+    }
+
+    // Se o email estiver verificado, envia o email de recuperação de senha
+    await firebase.auth().sendPasswordResetEmail(email);
+    alert('Email de recuperação de senha enviado.');
+  } catch (error) {
+    console.error(error);
+    alert('Falha ao enviar email de recuperação.');
+  }
+}
+
 
 //faz o usuario ficar logado, sem precisar fazer o login novamente
 firebase.auth().onAuthStateChanged(user => {

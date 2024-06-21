@@ -29,8 +29,8 @@ function logout(){
     });
 });*/
 
-function toggleIcon() {
-    var icon = document.getElementById('hearth-icon');
-    icon.classList.toggle('fa-regular');
-    icon.classList.toggle('fa-solid');
+function toggleIcon(element) {
+    //var icon = document.getElementById('hearth-icon');
+    element.classList.toggle('fa-regular');
+    element.classList.toggle('fa-solid');
 }

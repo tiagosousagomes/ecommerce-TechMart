@@ -1,10 +1,10 @@
 let wishlist = JSON.parse(localStorage.getItem('wishlist'));
 
 let produtos = [
-    {nome: 'iphone', valor: 9500.00},
-    {nome: 'notebook', valor: 4500.00},
-    {nome: 'suporte', valor: 100.00},
-    {nome: 'fone', valor: 435.00}
+    {nome: 'Iphone 15 Pro Max', imagem: '../assets/iphone-15-pro-maxx.jpeg', valor: 9500.00},
+    {nome: 'Notebook Gamer Dell G15-i1300', imagem: '../assets/notebook-g15.jpeg', valor: 4500.00},
+    {nome: 'Suporte para notebook portátil', imagem: '../assets/suporte-notebook.jpg', valor: 100.00},
+    {nome: 'Headset Gamer Sem Fio Logitech G435 LIGHTSPEED', imagem: '../assets/fone-de-ouvido.jpg', valor: 435.00}
 ]
 
 let produtosFavoritos = wishlist.map(index => produtos[index]);
@@ -17,24 +17,68 @@ function criarCardsProdutos() {
     // Filtra os produtos que estão na wishlist
     
     produtosFavoritos.forEach(produto => {
-        // Cria um elemento div para o card
-        let card = document.createElement('div');
-        card.classList.add('card');
+        // Cria um container principal para o pedido
+        let pedidoContainer = document.createElement('div');
+        pedidoContainer.classList.add('pedido-container');
 
-        // Cria um elemento h3 para o nome do produto
-        let nomeProduto = document.createElement('h3');
-        nomeProduto.textContent = produto.nome;
+        // Cria a seção da imagem do produto
+        let imageProduct = document.createElement('div');
+        imageProduct.classList.add('image-product-1');
 
-        // Cria um elemento p para o valor do produto
-        let valorProduto = document.createElement('p');
-        valorProduto.textContent = `R$ ${produto.valor.toFixed(2)}`;
+        let imagem = document.createElement('img');
+        imagem.src = produto.imagem;
+        imagem.alt = `Imagem de ${produto.nome}`;
 
-        // Adiciona os elementos ao card
-        card.appendChild(nomeProduto);
-        card.appendChild(valorProduto);
+        imageProduct.appendChild(imagem);
 
-        // Adiciona o card à lista de produtos
-        listaProdutos.appendChild(card);
+        // Cria a seção do título do pedido
+        let pedidoTitulo = document.createElement('div');
+        pedidoTitulo.classList.add('pedido-titulo');
+
+        let titulo = document.createElement('h4');
+        titulo.textContent = produto.nome;
+
+        //let entrega = document.createElement('p');
+        //entrega.textContent = 'Entregue em: 15 de Junho de 2024'; // Você pode alterar a data conforme necessário
+
+        //let comprarNovamente = document.createElement('button');
+        //comprarNovamente.classList.add('button-buy-again');
+        //comprarNovamente.textContent = 'Comprar novamente';
+
+        let verItem = document.createElement('button');
+        verItem.classList.add('button-see-item');
+        verItem.textContent = 'Ver item';
+
+        pedidoTitulo.appendChild(titulo);
+        //pedidoTitulo.appendChild(entrega);
+        //pedidoTitulo.appendChild(comprarNovamente);
+        pedidoTitulo.appendChild(verItem);
+
+        // Cria a seção dos botões de ação
+        let listButton = document.createElement('div');
+        listButton.classList.add('list-button');
+
+        let ul = document.createElement('ul');
+
+        let botoesAcao = ['Adicionar ao carrinho'];
+        botoesAcao.forEach(textoBotao => {
+            let li = document.createElement('li');
+            let botao = document.createElement('button');
+            botao.classList.add('button-action');
+            botao.textContent = textoBotao;
+            li.appendChild(botao);
+            ul.appendChild(li);
+        });
+
+        listButton.appendChild(ul);
+
+        // Adiciona todos os elementos ao container principal
+        pedidoContainer.appendChild(imageProduct);
+        pedidoContainer.appendChild(pedidoTitulo);
+        pedidoContainer.appendChild(listButton);
+
+        // Adiciona o container do pedido à lista de produtos na página
+        listaProdutos.appendChild(pedidoContainer);
     });
 }
 

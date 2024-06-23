@@ -1,122 +1,122 @@
 main{
-    background-color: #fafafa;
-  }
-  
-  .favoritos-container {
-      border: 1px solid #ddd;
-      padding: 20px;
-      margin: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      width: 60%;
-      height: 25vh;
-      display: flex;
-      gap: 7rem;
-      flex-direction: row;
-      background-color: #FFFFFF;
-     
-  }
+  background-color: #fafafa;
+}
+
+.pedido-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 25vh;
+    display: flex;
+    gap: 7rem;
+    flex-direction: row;
+    background-color: #FFFFFF;
    
-  .favoritos-container img {
-    width: 120px;
-    height: 120px;
-      border-radius: 8px;
-      /* Define a altura máxima */
-      object-fit: cover; /* Mantém a proporção da imagem */
-      
-  }
-  
-  .favoritos-container h4{
-      color: #007185;
-      margin-bottom: 0.4rem;
-  }
-  
-  .favoritos-container p{
-      margin-bottom: 1.3rem;
-  }
-  .favoritos-titulo {
-      font-size: 1.5em;
-      margin: 10px 0;
-      
-  }
-  .favoritos-data {
-      color: #666;
-      font-size: 0.9em;
-      margin-top: 1rem;
-  }
-  .button-buy-again{
-     background-color: #158A8A;
-      border-radius: 7px;
-      border: 1px solid;
-      padding: 10px 10px;
-      line-height: 15px;
-      cursor: pointer;
-      color: #FFFFFF;
-      font-size: 18px;
-      font-weight: 200;
-    }
+}
+ 
+.pedido-container img {
+  width: 120px;
+  height: 120px;
+    border-radius: 8px;
+    /* Define a altura máxima */
+    object-fit: cover; /* Mantém a proporção da imagem */
     
-    .button-buy-again:hover {
-      opacity: 80%;
-    }
+}
+
+.pedido-container h4{
+    color: #007185;
+    margin-bottom: 0.4rem;
+}
+
+.pedido-container p{
+    margin-bottom: 1.3rem;
+}
+.pedido-titulo {
+    font-size: 1.5em;
+    margin: 10px 0;
     
-    .button-see-item{
-      background-color: #FFFFFF;
-      border-radius: 5px;
-      border: 1px solid;
-      padding: 8px 8px;
-      line-height: 13px;
-      cursor: pointer;
-      color: #0f1111;
-      font-size: 15px;
-      font-weight: 100;
-    }
-  
-    .button-see-item:hover{
-      opacity: 80%;
-    }
-  
-    #titulo-do-favoritos{
-      padding: 20px;
-      margin: 20px;
-      
-    }
-  
-    .list-button{
-      display: flex;
-      width: 20px;
-      padding: 10px;
-      list-style: none;
-    }
-  
-    .list-button ul{
-      list-style: none;
-      width: 40px;
-     
+}
+.pedido-data {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 1rem;
+}
+.button-buy-again{
+   background-color: #158A8A;
+    border-radius: 7px;
+    border: 1px solid;
+    padding: 10px 10px;
+    line-height: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 200;
   }
   
-  .list-button li{
-      margin-bottom: 10px;
-  }
-  
-  .button-action{
-      background-color: #158A8A;
-      border-radius: 5px;
-      border: 1px solid;
-      padding: 12px 12px;
-      line-height: 13px;
-      cursor: pointer;
-      color: #FFFFFF;
-      font-size: 15px;
-      font-weight: 100; 
-      width: 9rem;
-  }
-  
-  .button-action:hover{
+  .button-buy-again:hover {
     opacity: 80%;
   }
   
-  .image-product-1{
-   width: 120px;
-   height: 120px;
+  .button-see-item{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 8px 8px;
+    line-height: 13px;
+    cursor: pointer;
+    color: #0f1111;
+    font-size: 15px;
+    font-weight: 100;
   }
+
+  .button-see-item:hover{
+    opacity: 80%;
+  }
+
+  #titulo-do-pedido{
+    padding: 20px;
+    margin: 20px;
+    
+  }
+
+  .list-button{
+    display: flex;
+	width: 20px;
+	padding: 10px;
+	list-style: none;
+  }
+
+  .list-button ul{
+    list-style: none;
+    width: 40px;
+   
+}
+
+.list-button li{
+    margin-bottom: 10px;
+}
+
+.button-action{
+    background-color: #158A8A;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 12px 12px;
+    line-height: 13px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 100; 
+    width: 9rem;
+}
+
+.button-action:hover{
+  opacity: 80%;
+}
+
+.image-product-1{
+ width: 120px;
+ height: 120px;
+}

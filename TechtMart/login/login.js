@@ -1,4 +1,5 @@
 
+
 // variavel que guarda os valores do input
 const form = {
     email: () => document.getElementById("email"),
@@ -34,7 +35,6 @@ async function recoverPassword() {
   }
   
 
-
 //faz o usuario ficar logado, sem precisar fazer o login novamente
 firebase.auth().onAuthStateChanged(user => {
     if(user){
@@ -43,3 +43,5 @@ firebase.auth().onAuthStateChanged(user => {
 })
 
 
+
+  

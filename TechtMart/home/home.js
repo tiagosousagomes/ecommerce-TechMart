@@ -59,23 +59,14 @@ function toggleIcon(element) {
     }
 }
 
-
-/*function toggleIcon(element) {
-
-    element.classList.toggle('fa-regular');
-    element.classList.toggle('fa-solid');
-
-    if (element.classList.contains('fa-solid')){
-        var parentId = element.parentElement.id;
-
-        var number = parentId.split('-')[1];
-        if (element.classList.contains('fa-solid')) {
-        wishlist.push(number);
-
-        console.log(wishlist)
+function setInitialIcons() {
+    wishlist.forEach(index => {
+        let iconElement = document.querySelector(`#hearth-${index} .fa-heart`);
+        if (iconElement) {
+            iconElement.classList.remove('fa-regular');
+            iconElement.classList.add('fa-solid');
         }
-    }else{
-        var index = wishlist.indexOf(number);
-        wishlist.pop(number)
-    }
-}*/
+    });
+}
+
+

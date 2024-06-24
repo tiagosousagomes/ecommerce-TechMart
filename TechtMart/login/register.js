@@ -13,11 +13,13 @@ function register(){
     function handleAuthError(error) {
 
         if(error.code == "auth/weak-password"){
-            return "Senha deve ter no minimo 6 caracteres."
+            return "A senha é muito fraca."
         }else if(error.code == "auth/invalid-email"){
             return "E-mail inválido."
         }else if(error.code == "auth/email-already-in-use"){
             return "E-mail já cadastrado."
+        }else if(error.code ="auth/missing-password"){
+            return "A senha deve conter no minimo 6 caracteres."
         }
         return error.message;
     }

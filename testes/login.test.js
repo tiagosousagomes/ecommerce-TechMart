@@ -3,7 +3,7 @@
 
 const validateEmail = require('../TechtMart/login/validation');
 
-describe('validateEmail function', () => {
+describe('validateEmail  teste function', () => {
     test('deve retornar verdadeiro para emails validos', () => {
         expect(validateEmail('test@gmail.com')).toBe(true);
         expect(validateEmail('test@gmail.name')).toBe(true);
